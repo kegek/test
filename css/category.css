@@ -1,0 +1,140 @@
+html,body{
+    height: 100%;
+}
+.jd_container{
+    height: 100%;
+    width: 100%;
+    /*全屏容器*/
+}
+/*顶部通栏*/
+.jd_topBar{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #ddd;
+    background: url("../images/header-bg.png") repeat-x 0 0 / 1px 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.jd_topBar a{
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    /*产出一个内容区域大小20*20*/
+    padding: 12px 10px;
+    /*把背景图的原点定位到内容区域*/
+    background-origin: content-box;
+    /*裁剪内容以外的区域的背景*/
+    background-clip: content-box;
+}
+.jd_topBar a.icon_back{
+    left: 0;
+    background-position: -20px 0;
+}
+.jd_topBar a.icon_menu{
+    right: 0;
+    background-position: -60px 0;
+}
+.jd_topBar form{
+    width: 100%;
+    padding: 0 40px;
+}
+.jd_topBar form input{
+    border: 1px solid #ddd;
+    height: 30px;
+    width: 100%;
+    margin-top: 7px;
+    border-radius: 2px;
+    padding: 0 10px;
+}
+
+/*分类容器*/
+.jd_category{
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    /*内容区域占满了剩余的高度*/
+}
+/*两栏自适应布局*/
+.jd_cateLeft{
+    height: 100%;
+    float: left;
+    width: 90px;
+    overflow: hidden;
+}
+.jd_cateLeft ul{
+    width: 100%;
+}
+.jd_cateLeft ul li{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: #f3f4f5;
+}
+.jd_cateLeft ul li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+}
+.jd_cateLeft ul li.now{
+    background: #fff;
+    border-right: none;
+}
+.jd_cateLeft ul li.now a{
+    color: #d8505c;
+}
+
+
+
+.jd_cateRight{
+    height: 100%;
+    overflow: hidden;
+}
+.jd_cateRight_box{
+    width: 101%;
+    padding: 0 10px;
+}
+.jd_cateRight_box .banner{
+    display: block;
+    width: 100%;
+}
+.jd_cateRight_box .banner img{
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+}
+.jd_cateRight_box .hot{
+    margin-top: 10px;
+}
+.jd_cateRight_box .hot h3{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.jd_cateRight_box .hot ul{
+    width: 100%;
+}
+.jd_cateRight_box .hot ul li{
+    width: 33.3333%;
+    float: left;
+}
+.jd_cateRight_box .hot ul li a{
+    display: block;
+    width: 100%;
+}
+.jd_cateRight_box .hot ul li a img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+.jd_cateRight_box .hot ul li a p{
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    padding: 3px 0;
+}
